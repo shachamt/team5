@@ -1,0 +1,276 @@
+/*.logo,image-section,HomePageImage, headerhome:מבוסס על מה שסתיו רשמה. שיניתי: */
+*{  
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body{
+    height: 120vh;
+}
+.gridContainer{
+        display: grid;
+        height: 120vh;
+        grid-template-columns:1fr 1fr 1fr  ;
+        grid-template-rows:0.5fr 2fr 2fr  1fr;
+        grid-template-areas: 
+        "header  header header"
+        "img  main main"
+        "img  main main"
+        "footer  footer footer";}
+#header{
+    background-color:#f7dbd0 ;
+    position: sticky;
+    top:0;
+    height: 20vh;
+    grid-area: header;
+}
+.headerhome{
+    font-size: 130%;
+	text-decoration: none;
+    text-align: right;
+}
+.SigningHeader{
+    text-align: right;
+	display: inline;
+	margin-left: 43%;
+	text-decoration:none;
+}
+
+.SigningHeader a{
+    font-size: 95%;
+	text-decoration:none;
+}
+#pageSubject{
+    font-size: 200%;
+    text-align: left;
+    padding-top: 1%;
+    margin-left: 3%;
+    vertical-align: middle;
+	display: inline;
+}
+
+#aboutUs{
+    grid-area: main;
+	background-color:#F3F4F2 ;
+}
+#aboutUs h3{
+	margin-top: 2%;
+	font-size: 150%;
+    text-align :left; 
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+	margin-left: 3%;}
+#text{
+	margin-top: 2%;
+	font-size: 120%;
+    text-align :left; 
+    color:rgb(0, 0, 0);
+    font-weight: inherit;
+	margin-left: 3%;
+}
+#HomePageImage{
+	grid-area: img;
+	background-image: url(../team5/static/nails1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.footer{
+    background-color:#f7dbd0 ;
+    padding: 70px 0;
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+    grid-area: footer;
+	height: 20vh;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   font-family: headerfont;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #000000;
+    text-transform: capitalize;
+	margin-bottom: 10px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #000000;
+    text-decoration: none;
+	display: block;
+	
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #000000;
+	
+}
+
+.footer-col .social-links img{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #000000;
+    opacity: 90%;
+}
+
+
+
+.image-section{
+	float: right;
+    width: auto;
+    height: 20vh;
+	padding-right:1%;
+}
+#logo{
+    width: auto;
+    height: 20vh;
+	display: block;
+	margin-left: auto;
+    margin-bottom: auto;
+}
+
+
+.image-section img{
+	width: 100%;
+	height: auto;
+	
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 20px;
+    
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 1.5;
+
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+    font-family: headerfont;
+
+
+
+}
+.content-section .content .button a:hover{
+	background-color: #979797;
+	color:#fff;
+}
+
+
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+    margin-bottom: auto;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+
+
+}
+
+
+center{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size:xx-large;
+}
+@font-face {
+    font-family: headerfont;
+    src: url(/Users/stavo/Documents/StavPazCohen/static/Poppins-Thin.ttf);
+}
+.active {
+    background-color: #24262b;
+}
+
+a:active {
+    color: rgb(0, 0, 0);
+}
+a:visited {
+    color:rgb(0, 0, 0);
+}
+.containerfooter{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
