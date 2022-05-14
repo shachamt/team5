@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Nail_it.css">
-    <script src="GetLocation.js"></script>
+    <script src="../GetLocation.js"></script>
 </head>
 
 <body>
@@ -46,8 +46,12 @@
                 <input type="tel" name="telephone" id="telephone" required>
                 <p></p>
 
-                <label for="location">Location: </label>
-                <input type="text" id="location" name="location" required>
+                <label for="Latitude">Latitude: </label>
+                <input type="text" id="Latitude" name="Latitude" required>
+                <p></p>
+
+                <label for="Longitude">Longitude: </label>
+                <input type="text" id="Longitude" name="Longitude" required>
                 <p></p>
 
                 <label for="password">Password: </label>
@@ -55,10 +59,12 @@
                 <p></p>
 
                 <button id="SignUpButton">Sign Up</button>
-
-
             </fieldset>
         </form>
+
+        <button   id="buttonLocationMani" onclick="GetLocationMani()">Find my location</button>
+        <p id="p1"></p>
+
 
         <footer class="footer">
             <div class="containerfooter">
