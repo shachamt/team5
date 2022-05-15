@@ -1,9 +1,9 @@
 /*.logo,image-section,HomePageImage, headerhome:מבוסס על מה שסתיו רשמה. שיניתי: */
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: myFirstFont;
 
 }
 
@@ -24,7 +24,7 @@ body {
 		"footer  footer footer";
 }
 
-#header {
+header {
 	background-color: #f7dbd0;
 	position: sticky;
 	top: 0;
@@ -82,12 +82,18 @@ body {
 	margin-left: 3%;
 }
 
-#HomePageImage {
+.PageImage {
 	grid-area: img;
-	background-image: url(../team5/static/nails1.jpg);
-	background-repeat: no-repeat;
 	background-size: cover;
+	height: 80vh;
 
+}
+.Home{
+	background-image: url(nails1.jpg);
+}
+
+.Business{
+	background-image: url(nails5.png);
 }
 
 .footer {
@@ -100,59 +106,6 @@ body {
 	height: 20vh;
 }
 
-.footer-col {
-	width: 25%;
-	padding: 0 15px;
-	font-family: headerfont;
-}
-
-.footer-col h4 {
-	font-size: 18px;
-	color: #000000;
-	text-transform: capitalize;
-	margin-bottom: 10px;
-	font-weight: 500;
-	position: relative;
-}
-
-.footer-col ul li:not(:last-child) {
-	margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #000000;
-	text-decoration: none;
-	display: block;
-
-}
-
-.footer-col .social-links a {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	margin: 0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #000000;
-
-}
-
-.footer-col .social-links img {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	margin: 0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #000000;
-	opacity: 90%;
-}
-
-
 
 .image-section {
 	float: right;
@@ -160,6 +113,45 @@ body {
 	height: 20vh;
 	padding-right: 1%;
 }
+
+.footer-content {
+    height: 30vh;
+    padding: 10vh;
+    padding-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4vh;
+}
+
+.socials li {
+    margin-bottom: 1vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.socials a {
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 5vh;
+}
+
+.socials a:hover i {
+    color: #24262b;
+}
+
 
 #logo {
 	width: auto;
@@ -218,6 +210,7 @@ body {
 }
 
 
+
 @media screen and (max-width: 768px) {
 	.container {
 		width: 80%;
@@ -270,9 +263,10 @@ center {
 	font-size: xx-large;
 }
 
+
 @font-face {
-	font-family: headerfont;
-	src: url(/Users/stavo/Documents/StavPazCohen/static/Poppins-Thin.ttf);
+    font-family: myFirstFont;
+    src: url(../static/Playfair_Display/static/PlayfairDisplay-Regular.ttf );
 }
 
 .active {
@@ -287,19 +281,7 @@ a:visited {
 	color: rgb(0, 0, 0);
 }
 
-.containerfooter {
-	max-width: 1170px;
-	margin: auto;
-}
 
-.row {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-ul {
-	list-style: none;
-}
 
 
 /*Sign Up Manicurist*/
@@ -377,4 +359,47 @@ input {
 
 #buttonLocationMani:hover {
 	box-shadow:inset 300px 0 0 0 #eed3c9 ;
+}
+
+
+
+/*My Business Profile*/
+
+.gridBusinessContainer {
+	display: grid;
+	justify-content: space-around;
+	align-content: stretch;
+	height: 150vh; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 20vh 40vh 40vh 20vh;
+	grid-template-areas:
+		"header  header header"
+		"img  manue about"
+		"img  manue pics"
+		"footer  footer footer";
+}
+
+
+.manue{
+	height: 80vh;
+	border: solid #fff;
+	grid-area:'manue' ;
+	background: solid  #c2836c ;
+	background-position: center;
+	background-size: cover;
+}
+
+.manue h1{
+	font-size: 4vh;
+}
+
+.about{
+	grid-area:"about" ;
+	border: solid #fff;
+	height: 30vh;
+}
+.pic-container{
+
+	grid-area:"pics" ;
+	border: solid #fff;
 }

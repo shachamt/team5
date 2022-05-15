@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/nailItStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="../static/GetLocation.js"></script>
-
+    <script src="GetLocation.js"></script>
     <title>Document</title>
 </head>
 
@@ -17,7 +16,7 @@
         <header>
             <nav>
                 <a href="">Manicurist ? Sign Up </a> &nbsp &nbsp
-				<a href="">Customer ? Sign Up </a>
+                <a href="">Customer ? Sign Up </a>
                 <ul>
                     <img src="../static/Logo.jpeg" id="logo">
                     <li><a href="homePage.html">Home Page</a></li>
@@ -30,46 +29,33 @@
         </header>
 
 
-        <div class="PageImage Home"></div>
+        <div class="PageImage BusinessProfile"></div>
 
         <main id="aboutUs">
-            <form id="SignUpManicuristForm" action="" method="post">
-                <fieldset>
-    
-                    <label id="email" for="email"> Email: </label>
-                    <input type="email" name="email" id="email" class="inputs" required>
-                    <p></p>
-    
-                    <label for="firstName">First Name: </label>
-                    <input type="text" id="firstName" name="firstName" required>
-                    <p></p>
-    
-                    <label for="lastName">Last Name: </label>
-                    <input type="text" id="lastName" name="lastName" required>
-                    <p></p>
-    
-                    <label for="telephone">Phone Number: </label>
-                    <input type="tel" name="telephone" id="telephone" required>
-                    <p></p>
-    
-                    <label for="Latitude">Latitude: </label>
-                    <input type="text" id="Latitude" name="Latitude" required>
-                    <p></p>
-    
-                    <label for="Longitude">Longitude: </label>
-                    <input type="text" id="Longitude" name="Longitude" required>
-                    <p></p>
-    
-                    <label for="password">Password: </label>
-                    <input type="text" id="password" name="password" required>
-                    <p></p>
-    
-                    <button id="SignUpButton">Sign Up</button>
-                </fieldset>
-            </form>
-    
-            <button   id="buttonLocationMani" onclick="GetLocationMani()">Find my location</button>
-            <p id="p1"></p>
+            <div id="text">
+                <h3>Search Manicurist </h3>
+                <div class="content">
+                    <img id="Searchlocaion" src="../static/location4.png" alt="">
+                    <button class="Searchbutton" onclick="GetLocation()">Click here to find my loction</button>
+                    <p id="p"></p>
+                    <form action="">
+                        <label for="servicetype">service type type</label> <br>
+                        <select class="Searchbutton" name="servicetype" id="servicetype">
+                            <option value="servicetype"> select type</option>
+                            <option value="GelPolish">GelPolish</option>
+                            <option value="RegularPolish">RegularPolish</option>
+                        </select><br>
+                        <label for="pricerange"> price range</label> <br>
+
+                        <input type="range" id="pricerange" min="40" max="200"> <span>40</span>
+                        <br>
+
+
+                        <button class="Searchbutton">Search</button><br>
+                    </form>
+
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
