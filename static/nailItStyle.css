@@ -1,20 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: myFirstFont;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: myFirstFont;
 
 }
 
 body {
-    background-color: white;
-        height: 100%;
+	background-color: white;
+	height: 100%;
 
 }
 
 @font-face {
-    font-family: myFirstFont;
-    src: url(../static/Poppins/Poppins-Regular.ttf );
+	font-family: myFirstFont;
+	src: url(../static/Poppins/Poppins-Regular.ttf );
 }
 
 .gridContainer {
@@ -32,96 +32,97 @@ body {
 
 /*__Header___*/
 header {
-    grid-area: header;
-    position: sticky;
-    background-color: #f7dbd0;
-    top: 0;
-    grid-area: header;
-    box-shadow: 0 0 0.5vh black;
-    
-   
+	grid-area: header;
+	position: sticky;
+	background-color: #f7dbd0;
+	top: 0;
+	grid-area: header;
+	box-shadow: 0 0 0.5vh black;
+
+
 
 }
 
-header nav a{
-    text-decoration: none;  
+header nav a {
+	text-decoration: none;
 }
 
 header nav {
-    padding: 5px;
-    text-align: center;
- 
-    height: 16vh;
-    width: 100%;
+	padding: 5px;
+	text-align: center;
+
+	height: 16vh;
+	width: 100%;
 
 }
 
 
 header nav li {
-    display: inline;
+	display: inline;
 
 }
+
 header nav ul {
-margin-top: 2vh;
+	margin-top: 2vh;
 }
 
 header nav li a {
-    color: black;
-    text-decoration: none;
-    padding: 3vw;
-    font-size: 2.3vw;
-    margin-top: 50px;
+	color: black;
+	text-decoration: none;
+	padding: 3vw;
+	font-size: 2.3vw;
+	margin-top: 50px;
 }
 
 #logo {
-    float: left;
-    width: 8%;
-    margin-top: -6vh;
+	float: left;
+	width: 8%;
+	margin-top: -6vh;
 
 }
 
 /*__Footer___*/
 
-footer{
-    grid-area: footer;
-    background-color: #f7dbd0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+footer {
+	grid-area: footer;
+	background-color: #f7dbd0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
 
 }
 
 .socials {
-    padding-top: 2vh;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   padding-bottom: 4vh;
+	padding-top: 2vh;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 4vh;
 }
 
 .socials li {
-    margin-bottom: 1vh;
-    margin-left: 3vh;
-    margin-right: 3vh;
+	margin-bottom: 1vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
 }
 
 .socials a {
-    color: #fff;
+	color: #fff;
 }
 
 .socials a i {
-    font-size: 5vh;
+	font-size: 5vh;
 }
 
 .socials a:hover i {
-    color: #24262b;
+	color: #24262b;
 }
 
 footer h3 {
-    padding-top: 3vh;
+	padding-top: 3vh;
 }
 
 /*__Page Image___*/
@@ -129,7 +130,7 @@ footer h3 {
 .PageImage {
 	grid-area: img;
 	background-size: cover;
-    background-image: url(nails1.jpg);
+	background-image: url(nails1.jpg);
 
 }
 
@@ -162,7 +163,7 @@ footer h3 {
 /*_____sign up Manicurist_____*/
 
 
-#SignUpManicuristForm { 
+#SignUpManicuristForm {
 	margin: 3vh 0;
 }
 
@@ -172,7 +173,7 @@ footer h3 {
 	border: solid 0.1vw rgb(230, 151, 151);
 	border-radius: 20px;
 	width: 40vw;
-    margin-left: 5vw;
+	margin-left: 5vw;
 
 }
 
@@ -210,7 +211,7 @@ input {
 }
 
 #SignUpButton:hover {
-	box-shadow:inset 300px 0 0 0 #eed3c9 ;
+	box-shadow: inset 300px 0 0 0 #eed3c9;
 }
 
 #buttonLocationMani {
@@ -225,7 +226,7 @@ input {
 }
 
 #buttonLocationMani:hover {
-	box-shadow:inset 300px 0 0 0 #eed3c9 ;
+	box-shadow: inset 300px 0 0 0 #eed3c9;
 }
 
 /*_____Business_____*/
@@ -243,36 +244,40 @@ input {
 		"footer  footer";
 }
 
-.menuBusiness{
-    grid-area: menuB ;
+.menuBusiness {
+	grid-area: menuB;
 	justify-content: center;
 }
 
-.aboutMenicurist{
-    grid-area: aboutB;
-	justify-content: center;
-}
-.MenicuristPics{
-    grid-area: picsB;
+.aboutMenicurist {
+	grid-area: aboutB;
 	justify-content: center;
 }
 
-.navDisplay1{
-    display: flex; 
-    justify-content: center;
-    margin: 4%;
+.MenicuristPics {
+	grid-area: picsB;
+	justify-content: center;
 }
-.spanStyle{
-    display:block;
-    font-size: 130%;
+
+.navDisplay1 {
+	display: flex;
+	justify-content: center;
+	margin: 4%;
 }
-.MyImg{
+
+.spanStyle {
+	display: block;
+	font-size: 130%;
+}
+
+.MyImg {
 	margin-left: 2vw;
 	margin-right: 2vw;
 
 }
-fieldset h1{
-	color:rgb(230, 151, 151) ;
+
+fieldset h1 {
+	color: rgb(230, 151, 151);
 }
 
 .MyBusinessField {
@@ -280,54 +285,58 @@ fieldset h1{
 	padding: 2vw;
 	border: solid 0.1vw rgb(230, 151, 151);
 	border-radius: 20px;
-    margin-left: 3vw;
+	margin-left: 3vw;
 	margin-top: 7vh;
 
 }
-.sandMani{
-    height: 7vh;
-    width: 100%;
-    margin-bottom: 5vh;
-    margin-top: 2vh;
-    padding: 2vh;
-    border-radius: 5vh;
-    border-color: #fff;
-    background-color: #f7dbd0;
-    border: none;
-    outline: none;
-    font-size: 3vh;
-    letter-spacing: 0.3vh;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-.sandMani:hover{
-    background-size: 50vh;
-    background: linear-gradient(90deg,#f7dbd0, rgb(180, 76, 76) ,rgb(230, 151, 151), #f7dbd0 );
-    background-size: 400%;
-    animation: glow 8s linear infinite;
-}
-@keyframes glow{
-    0%{
-        background-position: 0%;
-    }
-    100%{
-        background-position: 400%;
-    }
+
+.sandMani {
+	height: 7vh;
+	width: 100%;
+	margin-bottom: 5vh;
+	margin-top: 2vh;
+	padding: 2vh;
+	border-radius: 5vh;
+	border-color: #fff;
+	background-color: #f7dbd0;
+	border: none;
+	outline: none;
+	font-size: 3vh;
+	letter-spacing: 0.3vh;
+	cursor: pointer;
+	text-transform: uppercase;
 }
 
-.MenicuristPics img{
-    width: 15vw;
-    height:15vw;
-    padding: 2%;
-    margin-top: 1%;
-    border-radius: 10%;
+.sandMani:hover {
+	background-size: 50vh;
+	background: linear-gradient(90deg, #f7dbd0, rgb(180, 76, 76), rgb(230, 151, 151), #f7dbd0);
+	background-size: 400%;
+	animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+.MenicuristPics img {
+	width: 15vw;
+	height: 15vw;
+	padding: 2%;
+	margin-top: 1%;
+	border-radius: 10%;
 }
 
 @media only screen and (max-width: 700px) {
 	.gridContainerB {
 		display: grid;
-        grid-template-columns: repeat(1, 1fr);
-		
+		grid-template-columns: repeat(1, 1fr);
+
 		grid-template-areas:
 			"header "
 			"menuB"
@@ -335,7 +344,7 @@ fieldset h1{
 			"picsB"
 			"footer";
 	}
-	
+
 }
 
 /*_____Serch_____*/
@@ -352,23 +361,142 @@ fieldset h1{
 }
 
 .Searchbutton:hover {
-	box-shadow:inset 300px 0 0 0 #eed3c9 ;
+	box-shadow: inset 300px 0 0 0 #eed3c9;
 }
 
 .BusinessProfile {
 	grid-area: img;
 	background-size: cover;
-    background-image: url(../static/3.png);
-    
+	background-image: url(../static/3.png);
+
 }
 
-#Searchlocaion{
-    width: 6vw;
+#Searchlocaion {
+	width: 6vw;
+}
+
+/* editing businees profile */
+#priceTable {
+	margin: 10%;
+	margin-top: 14%;
+	padding: 1vw;
+	border: solid 0.1vw rgb(230, 151, 151);
+	border-radius: 10%;
+	color: rgb(230, 151, 151);
 }
 
 
+table {
+	margin-top: 2%;
+	margin-left: 5%;
+	width: 20vw;
 
+}
 
+#priceList {
+	margin-left: 25%;
+	margin-top: 5%;
+}
 
+#tableHeader {
+	text-align: center;
+}
 
+.labelElement {
+	width: 25vw;
+}
 
+#middleSection {
+	margin-top: 3%;
+	margin-right: 3%;
+	grid-area: description;
+}
+
+#middleSection h1 {
+	text-align: center;
+	margin-top: 0;
+}
+
+#middleSection input {
+	height: 35vh;
+	width: 30vw;
+}
+
+#middleSection {
+	text-align: left;
+	padding: 0.4em;
+	width: 400px;
+	height: 200px;
+}
+
+#aboutMeSection {
+	margin: 1vw;
+	padding: 2vw;
+	border: solid 0.1vw rgb(230, 151, 151);
+	border-radius: 20px;
+	margin-left: 3vw;
+	margin-top: 7vh;
+}
+
+#description {
+	margin-left: 6%;
+	width: 90%;
+}
+
+textarea {
+	resize: none;
+	height: 65vh;
+}
+
+#update {
+
+	height: 14vh;
+	width: 15vw;
+	margin-top: 5%;
+	margin-left: 28%;
+	padding: 2vh;
+	border-radius: 5vh;
+	border-color: #fff;
+	background-color: #f7dbd0;
+	border: none;
+	outline: none;
+	font-size: 6vh;
+	font-weight: bold;
+	letter-spacing: 0.3vh;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+#update:hover {
+	background-size: 50vh;
+	background: linear-gradient(90deg, #f7dbd0, rgb(180, 76, 76), rgb(230, 151, 151), #f7dbd0);
+	background-size: 400%;
+	animation: glow 8s linear infinite;
+}
+
+#uploadPic {
+	grid-area: uploadPic;
+	margin-top: 17%;
+
+}
+
+#uploadPic input {
+	width: 15vw;
+	height: 15vw;
+	padding: 2%;
+	margin-top: 1%;
+	border-radius: 10%;
+	border: solid 0.1vw rgb(230, 151, 151);
+}
+
+#gridContainerEditingProfile {
+	display: grid;
+	height: 130vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 2fr 2fr 1fr;
+	grid-template-areas:
+		"header  header header"
+		"menuB  description uploadPic"
+		"menuB  description uploadPic"
+		"footer  footer footer";
+}

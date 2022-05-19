@@ -39,3 +39,6 @@ function showPosition(position) {
 function sandMani(){
     alert("Your details have been sent to the manicurist and she will contact you in the next 12 hours");
 }
+function updateMyProfile(){
+    alert("Your details were updated");
+}
