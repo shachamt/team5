@@ -42,3 +42,13 @@ function sandMani(){
 function updateMyProfile(){
     alert("Your details were updated");
 }
+
+// להשתמש בזה לטובת ההגבלה של המחירון בדף עריכת הפרופיל העסקי - כרגע לא עובד
+function inputRequired (){  
+    const service= document.getElementsByClassName("service");
+    const price= document.getElementsByClassName("price");
+
+    if(service===""){
+        price.setAttribute("required", "");
+    }
+}

@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/nailItStyle.css">
-    <script defer src="../static/GetLocation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="../static/GetLocation.js"></script>
 
-    <title>Editing my business profile</title>
+    <title>Editing Business Profile</title>
 </head>
 
 <body>
-    <div id="gridContainerEditingProfile">
+    <div class="gridContainerB">
         <header>
             <nav>
                 <a href="">Manicurist ? Sign Up </a> &nbsp &nbsp
@@ -28,84 +29,103 @@
             </nav>
         </header>
 
-        <div id="priceTable">
-            <table >
-                <h1 id="priceList">Price List 💅🏻</h1>
-                <tr id="tableHeader">
-                   <td> Service</td>
-                   <td> Price <span>&#8362;</span></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-                <tr>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="40" placeholder="service type"><br></td>
-                    <td class="labelElement"><input type="text" id="username" name="username" maxlength="10" placeholder=" price"><br></td>
-                </tr>
-            
-            </table>
-        </div>
-         
- 
+        <div class="aboutMenicurist">
+            <fieldset class="MyBusinessField">
+                <h1>About Me:</h1><br>
+                <textarea id="description" cols="5" rows="8"></textarea>
 
-        <div id="middleSection">
-            <fieldset id="aboutMeSection">
-            <h1 id="aboutMeText">About Me</h1>
-            <textarea id="description" cols="30" rows="10"></textarea>
-        </fieldset> 
+            </fieldset>
+        </div>
+        <div class="menuBusiness">
+            <fieldset class="MyBusinessField">
+                <center>
+
+                    <table>
+                        <h1 id="priceList">Price List 💅🏻</h1>
+                        <tr>
+                            <td class="tableHeader"> Service</td>
+                            <td class="tableHeader"> &#8362</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+
+                    </table>
+                </center>
+
+            </fieldset>
 
         </div>
-        
 
         <div id="uploadPic">
 
             <div class="navDisplay1">
-                <div >
-                    <input type="file" id="addedFile"name="addedFile" accept="image/png, image/jpeg"><br>
+                <div>
+                    <input type="file" id="addedFile" name="addedFile" accept="image/png, image/jpeg"><br>
                     <span class="spanStyle"></span>
                 </div>
                 <div>
-                    <input type="file" id="addedFile"name="addedFile" accept="image/png, image/jpeg"><br>
+                    <input type="file" id="addedFile" name="addedFile" accept="image/png, image/jpeg"><br>
                     <span class="spanStyle"></span>
                 </div>
             </div>
-            <div class="navDisplay1" >
-                <div >
-                    <input type="file" id="addedFile"name="addedFile" accept="image/png, image/jpeg"><br>
+            <div class="navDisplay1">
+                <div>
+                    <input type="file" id="addedFile" name="addedFile" accept="image/png, image/jpeg"><br>
                     <span class="spanStyle"></span>
                 </div>
 
                 <div>
-                    <input type="file" id="addedFile"name="addedFile" accept="image/png, image/jpeg"><br>
+                    <input type="file" id="addedFile" name="addedFile" accept="image/png, image/jpeg"><br>
                     <span class="spanStyle"></span>
                 </div>
             </div>
-            <button id="update" type="button"  onclick="updateMyProfile()"> Update</button>
+            <button id="update" type="button" onclick="updateMyProfile()"> Update</button>
 
         </div>
 
