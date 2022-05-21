@@ -1,3 +1,6 @@
+
+//to show and hide the password of customer sign up
+
 function showPassword() {
     var pass = document.getElementById("password");
     var eye1 = document.getElementById("hide1");
@@ -18,7 +21,7 @@ function showPassword() {
 
 }
 
-
+//validation for customer sign up
 const lastName = document.getElementById("lastName")
 const firstName = document.getElementById("firstName")
 const password = document.getElementById("password")

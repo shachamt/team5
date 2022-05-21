@@ -16,7 +16,7 @@ function showPosition(position) {
     y.innerHTML = "try me again";
     console.log(position);
 }
-
+ //get location for manicutrist sign up
 function GetLocationMani() {
     if (navigator.geolocation) {
         console.log("in get location");
@@ -26,7 +26,7 @@ function GetLocationMani() {
     }
 }
 
-
+//writes the position in the form
 function showPosition(position) {
     var x = document.getElementById("p1");
     var y = document.getElementById("buttonLocationMani");
@@ -43,7 +43,7 @@ function updateMyProfile() {
     alert("Your details were updated");
 }
 
-
+//to show and hide the password of manicurist sign up
 function showPassword() {
     var pass = document.getElementById("password");
     var eye1 = document.getElementById("hide1");
@@ -64,7 +64,7 @@ function showPassword() {
 
 }
 
-
+//validation for manicurist sign up
     const lastName = document.getElementById("lastName")
     const firstName = document.getElementById("firstName")
     const password = document.getElementById("password")
@@ -72,7 +72,6 @@ function showPassword() {
     const errorMani = document.getElementById("errorMani")
     const email = document.getElementById("email")
     const phone = document.getElementById("telephone")
-    console.log(phone)
 
     formMani.addEventListener('submit', (e) => {
         let messages = []
