@@ -163,11 +163,11 @@ footer h3 {
 /*_____sign up Manicurist_____*/
 
 
-#SignUpManicuristForm {
+.SignUpForm {
 	margin: 3vh 0;
 }
 
-#SignUpManicuristForm fieldset {
+.SignUpForm fieldset {
 	margin: 1vw;
 	padding: 2vw;
 	border: solid 0.1vw rgb(230, 151, 151);
@@ -176,6 +176,7 @@ footer h3 {
 	margin-left: 5vw;
 
 }
+
 
 
 label {
@@ -190,15 +191,19 @@ input {
 	padding: 0.2vw;
 	height: 3.5vh;
 	border: solid 0.2vh black;
-	width: 5vw;
+	width: 9vw;
 	margin: 2vh;
 }
 
 #email {
 	width: 15vw;
 }
+#email1{ 
+	width: 15vw;
 
-#SignUpButton {
+}
+
+.SignButton {
 	cursor: pointer;
 	margin-left: 45vw;
 	width: 6vw;
@@ -210,13 +215,15 @@ input {
 	font-size: 2vh;
 }
 
-#SignUpButton:hover {
+.SignButton:hover {
 	box-shadow: inset 300px 0 0 0 #eed3c9;
 }
 
 #buttonLocationMani {
+	display: inline;
 	cursor: pointer;
-	margin-left: 45vw;
+	margin-left: 2%;
+	margin-right: 2%;
 	width: 15%;
 	background-color: rgb(255, 255, 255);
 	border-radius: 5px;
@@ -228,6 +235,34 @@ input {
 #buttonLocationMani:hover {
 	box-shadow: inset 300px 0 0 0 #eed3c9;
 }
+
+#LatitudeLabel {
+	margin-left: 0;
+}
+
+/*___Sign in___*/
+
+#SignInForm {
+	margin: 20% 0;
+}
+
+#SignInForm fieldset {
+	margin: 1vw;
+	padding: 2vw;
+	border: solid 0.1vw rgb(230, 151, 151);
+	border-radius: 20px;
+	width: 40vw;
+	margin-left: 5vw;
+}
+
+#hide1{
+	display: none;
+}
+
+input::-webkit-inner-spin-button { /*hide arrows in number type*/
+	-webkit-appearance: none;
+	margin: 0;
+  }
 
 /*_____Business_____*/
 

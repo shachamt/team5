@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-    <title>Sign Up- Manicurist </title>
+    <title>Sign In </title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../static/nailItStyle.css">
-    <script defer src="../static/GetLocation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="../static/GetLocation.js"></script>
+
+    <title>Document</title>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
         <header>
             <nav>
                 <a href="">Manicurist ? Sign Up </a> &nbsp &nbsp
-				<a href="">Customer ? Sign Up </a>
+                <a href="">Customer ? Sign Up </a>
                 <ul>
                     <img src="../static/Logo.jpeg" id="logo">
                     <li><a href="homePage.html">Home Page</a></li>
@@ -32,50 +34,29 @@
         <div class="PageImage Home"></div>
 
         <main id="aboutUs">
-            <form id="SignUpManicuristForm" class="SignUpForm" action="" method="post">
+            <form id="SignInForm" action="" method="post">
                 <fieldset>
-    
-                    <label for="email"> Email: </label>
+
+                    <label id="email" for="email"> Email: </label>
+                    <i class="fa-solid fa-envelope"></i>
+
                     <input type="email" name="email" id="email" class="inputs" required>
                     <p></p>
-    
-                    <label for="firstName">First Name: </label>
-                    <input type="text" id="firstName" name="firstName" required>
-                    <p></p>
-    
-                    <label for="lastName">Last Name: </label>
-                    <input type="text" id="lastName" name="lastName" required>
-                    <p></p>
-    
-                    <label for="telephone">Phone Number: </label>
-                    <input type="number" name="telephone" id="telephone" required>
-                    <p></p>
-    
-                    <button  type="button" id="buttonLocationMani" onclick="GetLocationMani()">Find my location</button>
 
-                    <label id="LatitudeLabel" for="Latitude">Latitude: </label>
-                    <input type="text" id="Latitude" name="Latitude" required disabled>
-                    <p></p>
-    
-                    <label for="Longitude">Longitude: </label>
-                    <input type="text" id="Longitude" name="Longitude" required disabled>
-                    <p></p>
-    
                     <label for="password">Password: </label>
+                    <i class="fa-solid fa-key"></i>
                     <input type="password" id="password" name="password" required>
                     <span class="eye" onclick="showPassword()">
                         <i id="hide1" class="fa-solid fa-eye"></i>
                         <i id="hide2" class="fa-solid fa-eye-slash"></i>
                     </span>
-                    <div id="errorMani"></div>
-
                     <p></p>
-    
-                    <button type="submit" id="signUpButton" class="SignButton" >Sign Up</button>
+
+                    <button id="SignInButton" class="SignButton">Sign In</button>
                 </fieldset>
             </form>
-    
-]        </main>
+
+        </main>
 
         <footer class="footer">
 
