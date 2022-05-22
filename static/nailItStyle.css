@@ -384,6 +384,7 @@ fieldset h1 {
 
 /*_____Serch_____*/
 
+
 .Searchbutton {
 	cursor: pointer;
 	width: 7vw;
@@ -394,7 +395,31 @@ fieldset h1 {
 	transition: ease-out 0.5s;
 	font-size: 2vh;
 }
+#search-section{
+	margin-top: 3vh;
+	width: 8vw;
+	height: 6vh;
+	font-size:medium;
+	}
+#servicetype{
+	height: 7vh;
+	margin-top: 1vh
+	}
 
+#locate{
+	cursor: pointer;
+	width: 18vw;
+	height: 5vh;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 0 #eed3c9;
+	transition: ease-out 0.5s;
+	font-size: 2vh;
+}
+
+#locate:hover {
+	box-shadow: inset 300px 0 0 0 #eed3c9;
+}
 .Searchbutton:hover {
 	box-shadow: inset 300px 0 0 0 #eed3c9;
 }
@@ -406,9 +431,29 @@ fieldset h1 {
 
 }
 
+.titels{
+	margin-left: auto;
+
+}
+
+
 #Searchlocaion {
 	width: 6vw;
 }
+
+#location-section{
+	margin-left: -4vh;
+}
+#type-section{
+	margin-top: 3vh;
+}
+#price-section{
+	margin-top: 3vh;
+}
+#pricerange{
+	margin-left:0vh ;
+}
+
 
 /* editing business profile */
 

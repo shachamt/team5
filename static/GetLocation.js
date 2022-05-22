@@ -10,7 +10,7 @@ function GetLocation() {
 
 function showPosition(position) {
     var x = document.getElementById("p");
-    var y = document.getElementById("button");
+    var y = document.getElementById("locate");
     x.innerHTML = "Your In <br>" + "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
     y.innerHTML = "try me again";

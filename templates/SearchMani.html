@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/nailItStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="GetLocation.js"></script>
+    <script defer src="../static/GetLocation.js"></script>
+    <script defer src="../static/SearchMani.js"></script>
     <title>Document</title>
 </head>
 
@@ -15,13 +16,13 @@
     <div class="gridContainer">
         <header>
             <nav>
-                <a href="">Manicurist ? Sign Up </a> &nbsp &nbsp
-                <a href="">Customer ? Sign Up </a>
+                <a href="signUpManicurist.html">Manicurist ? Sign Up </a> &nbsp &nbsp
+                <a href="signUpCustomer.html">Customer ? Sign Up </a>
                 <ul>
                     <img src="../static/Logo.jpeg" id="logo">
                     <li><a href="homePage.html">Home Page</a></li>
-                    <li><a href="signUpCustomer.html"> Sign In</a></li>
-                    <li><a href="Search.html"> Find Manicurist</a></li>
+                    <li><a href="signIn.html"> Sign In</a></li>
+                    <li><a href="SearchMani.html"> Find Manicurist</a></li>
                     <li><a href="MyBusinessPro.html"> Business Profile </a></li>
 
                 </ul>
@@ -33,27 +34,34 @@
 
         <main id="aboutUs">
             <div id="text">
-                <h3>Search Manicurist </h3>
+                <div id="headtitle">
+                <h2 >Search Manicurist </h2>
+            </div>
                 <div class="content">
+                    <div id="location-section">
                     <img id="Searchlocaion" src="../static/location4.png" alt="">
-                    <button class="Searchbutton" onclick="GetLocation()">Click here to find my loction</button>
+                    <button class="Searchbutton" id="locate" onclick="GetLocation()">Click here to find my loction</button>
                     <p id="p"></p>
+                 </div>
                     <form action="">
-                        <label for="servicetype">service type type</label> <br>
+                        <div id="type-section"> 
+                        <label for="servicetype" class="titels">Service Type</label> <br>
                         <select class="Searchbutton" name="servicetype" id="servicetype">
-                            <option value="servicetype"> select type</option>
+                            <option value="servicetype"> Select Type</option>
                             <option value="GelPolish">GelPolish</option>
                             <option value="RegularPolish">RegularPolish</option>
                         </select><br>
-                        <label for="pricerange"> price range</label> <br>
-
+                    </div>
+                    <div id="price-section">
+                        <label for="pricerange" class="titels"> Price Range</label> <br>
                         <input type="range" id="pricerange" min="40" max="200"> <span>40</span>
                         <br>
-
-
-                        <button class="Searchbutton">Search</button><br>
+                    </div>
+                        
+                        <button class="Searchbutton" id="search-section">Search</button>
+                    
                     </form>
-
+             
                 </div>
             </div>
         </main>
@@ -75,6 +83,7 @@
         </footer>
 
     </div>
+   
 </body>
 
 </html>
