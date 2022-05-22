@@ -32,33 +32,66 @@
 
         <div class="menuBusiness">
             <fieldset class="MyBusinessField">
-                <h1>Avivit's menu:</h1><br>
-                <ul>
-                    <li>
-                        <p>Regular Lak Gel ₪70</p>
-                    </li>
-                    <li>
-                        <p>Anatomy Lak Gel (for thicker nails) ₪80</p>
-                    </li>
-                    <li>
-                        <p>egular Lak Gel + Russian Manic ure (for dead skin removal) 💅🏻 ₪85</p>
-                    </li>
-                    <li>
-                        <p>Anatomy Lak Gel (for thicker nails) + Russian Manicure 💅🏻 (for dead skin removal) ₪95</p>
-                    </li>
-                    <li>
-                        <p>Regular Lak Gel ₪70</p>
-                    </li>
-                    <li>
-                        <p>Anatomy Lak Gel (for thicker nails) ₪80</p>
-                    </li>
-                    <li>
-                        <p>egular Lak Gel + Russian Manic ure (for dead skin removal) 💅🏻 ₪85</p>
-                    </li>
-                    <li>
-                        <p>Anatomy Lak Gel (for thicker nails) + Russian Manicure 💅🏻 (for dead skin removal) ₪95</p>
-                    </li>
-                </ul>
+
+                <center>
+
+                    <table>
+                        <h1 id="priceList">Avivit's menu:</h1>
+                        <tr>
+                            <td class="tableHeader"> Service</td>
+                            <td class="tableHeader"> &#8362</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="Regular Lak Gel" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="70" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails)" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="80" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="egular Lak Gel + Russian Manic ure (for dead skin removal)" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="85" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails) + Russian Manicure" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="95" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="Regular Lak Gel" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="70" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails)" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="80" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="egular Lak Gel + Russian Manic ure (for dead skin removal)" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="85" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails) + Russian Manicure" maxlength="90"
+                                    placeholder="service"><br></td>
+                            <td><input type="number" class="price" name="username" readonly value="95" min="0"
+                                    oninput="validity.valid||(value='');" placeholder="price"><br></td>
+                        </tr>
+
+                    </table>
+                </center>
                 <button class="sandMani" type="button"  onclick="sandMani()"> Click here to send details to Aviivit</button>
 
             </fieldset>
