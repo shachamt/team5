@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="gridContainer">
+    <div class="gridContainer ">
         <header>
             <nav>
                 <a href="signUpManicurist.html">Manicurist ? Sign Up </a> &nbsp &nbsp
@@ -31,9 +31,9 @@
         </header>
 
 
-        <div class="PageImage Home"></div>
+        <div class="PageImage signUpMani"></div>
 
-        <main id="aboutUs">
+        <main class="aboutUs signUpMani">
             <form id="SignUpManicuristForm" class="SignUpForm" action="" method="post">
                 <fieldset>
 
@@ -53,11 +53,11 @@
                     <input type="number" name="telephone" id="telephone" required>
                     <p></p>
 
-                    <button type="button" id="buttonLocationMani" onclick="GetLocationMani()">Find my location</button>
 
                     <label id="LatitudeLabel" for="Latitude">Latitude: </label>
                     <input type="text" id="Latitude" name="Latitude" required disabled>
                     <p></p>
+                    <button type="button" id="buttonLocationMani" onclick="GetLocationMani()">Find my location</button>
 
                     <label for="Longitude">Longitude: </label>
                     <input type="text" id="Longitude" name="Longitude" required disabled>
@@ -77,8 +77,10 @@
                 </fieldset>
             </form>
 
-            
+
+
         </main>
+
 
         <footer class="footer">
 
