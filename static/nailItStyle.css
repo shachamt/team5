@@ -128,7 +128,7 @@ footer h3 {
 /*_____General Button_____*/
 
 button {
-	border-radius: 5vh;
+	border-radius: 3.5vh;
 	border-color: #fff;
 	background-color: rgb(180, 76, 76);
 	border: none;
@@ -182,7 +182,7 @@ button:hover {
 	background-color: #F3F4F2;
 }
 
-/*_____Home, search_____*/
+/*_____Home_____*/
 
 .aboutUs h3 {
 	margin-top: 2%;
@@ -214,19 +214,17 @@ button:hover {
 	padding: 2vw;
 	border: solid 0.1vw rgb(230, 151, 151);
 	border-radius: 20px;
-	width: 40vw;
+	width: 90%;
 	margin-left: 5vw;
 
 }
-
-
 
 label {
 	font-size: 4vh;
 	display: inline;
 	margin-top: 1vw;
 	width: 20vw;
-	margin-left: 10vw;
+	margin-left: 5%;
 }
 
 input {
@@ -237,35 +235,41 @@ input {
 	margin: 2vh;
 }
 
+.inputs {
+	border: solid 0.2vh black;
+	width: 20%;
+
+}
+
 #email {
-	width: 15vw;
+	width: 28%;
 }
 
 #email1 {
-	width: 15vw;
+	width: 28%;
 
 }
 
 .SignButton {
-	margin-left: 45vw;
-	width: 6vw;
-	height: 4vh;
-	font-size: 2vh;
+	float: right;
+	width: 25%;
+	height:7vh;
+	font-size: 80%;
 }
 
 
 #buttonLocationMani {
 	display: inline;
 	float: right;
-	margin-right: 2%;
 	width: 25%;
-	height: 25%;
-	font-size: 60%;
+	height:7vh;
+	font-size: 80%;
 }
 
 
 
 /*___Sign in___*/
+
 
 #SignInForm {
 	margin: 20% 0;
@@ -276,7 +280,7 @@ input {
 	padding: 2vw;
 	border: solid 0.1vw rgb(230, 151, 151);
 	border-radius: 20px;
-	width: 40vw;
+	width: 90%;
 	margin-left: 5vw;
 }
 
@@ -288,6 +292,10 @@ input::-webkit-inner-spin-button {
 	/*hide arrows in number type*/
 	-webkit-appearance: none;
 	margin: 0;
+}
+
+#password {
+	width: 20%;
 }
 
 /*_____Business profile_____*/
@@ -395,31 +403,40 @@ fieldset h1 {
 
 }
 
-/*_____Serch_____*/
+/*_____Search_____*/
 
 
-.Searchbutton {
-	width: 7vw;
-	height: 10vh;
-	font-size: 2vh;
+#searchText {
+	margin-top: 2%;
+	font-size: 120%;
+	text-align: left;
+	color: rgb(0, 0, 0);
+	font-weight: inherit;
+	margin-left: 10%;
 }
 
+
+#locate { /*find location button*/
+	display: inline;
+	width: auto;
+	font-size: 70%;
+	border-radius: 15px;
+	padding: 2%;
+}
+
+
 #search-section {
-	margin-top: 3vh;
-	width: 8vw;
-	height: 6vh;
-	font-size: medium;
+	display: inline;
+	width: auto;
+	font-size: 80%;
+	border-radius: 15px;
+	padding: 2%;
+	margin-bottom: 5%;
 }
 
 #servicetype {
 	height: 7vh;
 	margin-top: 1vh
-}
-
-#locate {
-	width: 18vw;
-	height: 5vh;
-	font-size: 2vh;
 }
 
 
@@ -430,7 +447,7 @@ fieldset h1 {
 .BusinessProfile {
 	grid-area: img;
 	background-size: cover;
-	background-image: url(../static/3.png);
+	background-image: url(../static/nails1.jpg);
 
 }
 
@@ -441,7 +458,7 @@ fieldset h1 {
 
 
 #Searchlocaion {
-	width: 6vw;
+	width: 10%;
 }
 
 #location-section {
@@ -532,18 +549,8 @@ textarea {
 }
 
 
-/*signim*/
+/*_____sign pages, search, home - media_____*/
 @media only screen and (max-width: 760px) {
-
-	.SignUpForm fieldset {
-		width: 90%;
-	}
-
-	#SignInForm fieldset {
-		width: 90%;
-
-
-	}
 
 
 	.PageImage {
@@ -569,5 +576,19 @@ textarea {
 
 
 	}
+
+	#email {
+		width: 35%;
+	}
+	
+	#email1 {
+		width: 35%;
+	
+	}
+
+	#password {
+		width: 28%;
+	}
+
 
 }
