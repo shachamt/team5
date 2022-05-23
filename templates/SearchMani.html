@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script defer src="../static/GetLocation.js"></script>
     <script defer src="../static/SearchMani.js"></script>
-    <title>Document</title>
+    <script defer src="../static/general.js"></script>
+
+    <title>Search</title>
 </head>
 
 <body>
@@ -40,25 +42,25 @@
                 <div class="content">
                     <div id="location-section">
                     <img id="Searchlocaion" src="../static/location4.png" alt="">
-                    <button class="Searchbutton" id="locate" onclick="GetLocation()">Click here to find my loction</button>
+                    <button id="locate" onclick="GetLocation()">Click here to find my loction</button>
                     <p id="p"></p>
                  </div>
                     <form action="">
                         <div id="type-section"> 
                         <label for="servicetype" class="titels">Service Type</label> <br>
-                        <select class="Searchbutton" name="servicetype" id="servicetype">
+                        <select name="servicetype" id="servicetype">
                             <option value="servicetype"> Select Type</option>
                             <option value="GelPolish">GelPolish</option>
                             <option value="RegularPolish">RegularPolish</option>
                         </select><br>
                     </div>
                     <div id="price-section">
-                        <label for="pricerange" class="titels"> Price Range</label> <br>
+                        <label for="pricerange" class="titels">Max Price</label> <br>
                         <input type="range" id="pricerange" min="40" max="200"> <span>40</span>
                         <br>
                     </div>
                         
-                        <button class="Searchbutton" id="search-section">Search</button>
+                        <button id="search-section">Search</button>
                     
                     </form>
              
@@ -72,11 +74,11 @@
             <p>Our phone number: 050-8236578</p>
             <p>Our Email is: nailIt@post.bgu.ac.il</p>
             <ul class="socials">
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-facebook"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-twitter"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-google-plus "></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com/" target="_blank"> <i class="fab fa-google-plus "></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube"></i></a></li>
 
             </ul>
 

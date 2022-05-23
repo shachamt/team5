@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/nailItStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="../static/GetLocation.js"></script>
+    <script defer src="../static/general.js"></script>
 
     <title>Business Profile</title>
 </head>
@@ -42,49 +43,55 @@
                             <td class="tableHeader"> &#8362</td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="Regular Lak Gel" maxlength="90"
-                                    placeholder="service"><br></td>
+                            <td><input type="text" class="service" name="username" readonly value="Regular Lak Gel"
+                                    maxlength="90" placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="70" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails)" maxlength="90"
+                            <td><input type="text" class="service" name="username" readonly
+                                    value="Anatomy Lak Gel (for thicker nails)" maxlength="90"
                                     placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="80" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="egular Lak Gel + Russian Manic ure (for dead skin removal)" maxlength="90"
+                            <td><input type="text" class="service" name="username" readonly
+                                    value="egular Lak Gel + Russian Manic ure (for dead skin removal)" maxlength="90"
                                     placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="85" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails) + Russian Manicure" maxlength="90"
+                            <td><input type="text" class="service" name="username" readonly
+                                    value="Anatomy Lak Gel (for thicker nails) + Russian Manicure" maxlength="90"
                                     placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="95" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="Regular Lak Gel" maxlength="90"
-                                    placeholder="service"><br></td>
+                            <td><input type="text" class="service" name="username" readonly value="Regular Lak Gel"
+                                    maxlength="90" placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="70" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails)" maxlength="90"
+                            <td><input type="text" class="service" name="username" readonly
+                                    value="Anatomy Lak Gel (for thicker nails)" maxlength="90"
                                     placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="80" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="egular Lak Gel + Russian Manic ure (for dead skin removal)" maxlength="90"
+                            <td><input type="text" class="service" name="username" readonly
+                                    value="egular Lak Gel + Russian Manic ure (for dead skin removal)" maxlength="90"
                                     placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="85" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="service" name="username" readonly value="Anatomy Lak Gel (for thicker nails) + Russian Manicure" maxlength="90"
+                            <td><input type="text" class="service" name="username" readonly
+                                    value="Anatomy Lak Gel (for thicker nails) + Russian Manicure" maxlength="90"
                                     placeholder="service"><br></td>
                             <td><input type="number" class="price" name="username" readonly value="95" min="0"
                                     oninput="validity.valid||(value='');" placeholder="price"><br></td>
@@ -92,10 +99,11 @@
 
                     </table>
                 </center>
-                <button class="sandMani" type="button"  onclick="sandMani()"> Click here to send details to Aviivit</button>
+                <button class="sandMani" type="button" onclick="sandMani()"> Click here to send details to
+                    Avivit</button>
 
             </fieldset>
-            
+
         </div>
 
         <div class="aboutMenicurist">
@@ -104,7 +112,7 @@
                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam mollitia soluta, hic sapiente
                     id nam corporis, delectus, obcaecati voluptate exercitationem eaque molestiae amet! Facere
                     laboriosam tenetur, impedit praesentium dicta esse!</p>
-            </fieldset> 
+            </fieldset>
         </div>
 
         <div class="MenicuristPics">
@@ -131,6 +139,8 @@
                 </div>
             </div>
 
+            <button id="editProfile" type="button"> <a href="../templates/editingBusinessProfile.html">Edit Profile</a></button>
+
         </div>
 
 
@@ -141,11 +151,11 @@
             <p>Our phone number: 050-8236578</p>
             <p>Our Email is: nailIt@post.bgu.ac.il</p>
             <ul class="socials">
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-facebook"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-twitter"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-google-plus "></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com/" target="_blank"> <i class="fab fa-google-plus "></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube"></i></a></li>
 
             </ul>
 

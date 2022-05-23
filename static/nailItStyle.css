@@ -12,6 +12,10 @@ body {
 
 }
 
+.active {
+	color: rgb(136, 64, 86);
+}
+
 @font-face {
 	font-family: myFirstFont;
 	src: url(../static/Poppins/Poppins-Regular.ttf );
@@ -39,12 +43,12 @@ header {
 	grid-area: header;
 	box-shadow: 0 0 0.5vh black;
 
-
-
 }
 
 header nav a {
 	text-decoration: none;
+	font-size: 1.6vw;
+
 }
 
 header nav {
@@ -59,24 +63,30 @@ header nav {
 
 header nav li {
 	display: inline;
-
 }
 
 header nav ul {
 	margin-top: 2vh;
+
 }
 
 header nav li a {
 	color: black;
 	text-decoration: none;
-	padding: 3vw;
+	margin: 3vw;
 	font-size: 2.3vw;
 	margin-top: 50px;
+	margin-left: 0;
+
+}
+
+header nav li a:hover {
+	color: white;
 }
 
 #logo {
 	float: left;
-	width: 8%;
+    height: 18vh;
 	margin-top: -6vh;
 
 }
@@ -124,6 +134,40 @@ footer {
 footer h3 {
 	padding-top: 3vh;
 }
+
+
+/*__General Button___*/
+
+button {
+	border-radius: 5vh;
+	border-color: #fff;
+	background-color: rgb(180, 76, 76);
+	border: none;
+	outline: none;
+	font-size: 3vh;
+	letter-spacing: 0.3vh;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+button:hover {
+	background-size: 50vh;
+	background: linear-gradient(90deg, #f7dbd0, rgb(187, 90, 90), rgb(230, 151, 151), #f7dbd0);
+	background-size: 400%;
+	animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+
 
 /*__Page Image___*/
 
@@ -198,43 +242,28 @@ input {
 #email {
 	width: 15vw;
 }
-#email1{ 
+
+#email1 {
 	width: 15vw;
 
 }
 
 .SignButton {
-	cursor: pointer;
 	margin-left: 45vw;
 	width: 6vw;
 	height: 4vh;
-	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
-	box-shadow: inset 0 0 0 0 #eed3c9;
-	transition: ease-out 0.5s;
 	font-size: 2vh;
 }
 
-.SignButton:hover {
-	box-shadow: inset 300px 0 0 0 #eed3c9;
-}
 
 #buttonLocationMani {
 	display: inline;
-	cursor: pointer;
 	margin-left: 2%;
 	margin-right: 2%;
 	width: 15%;
-	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
-	box-shadow: inset 0 0 0 0 #eed3c9;
-	transition: ease-out 0.5s;
 	font-size: 2vh;
 }
 
-#buttonLocationMani:hover {
-	box-shadow: inset 300px 0 0 0 #eed3c9;
-}
 
 #LatitudeLabel {
 	margin-left: 0;
@@ -255,14 +284,15 @@ input {
 	margin-left: 5vw;
 }
 
-#hide1{
+#hide1 {
 	display: none;
 }
 
-input::-webkit-inner-spin-button { /*hide arrows in number type*/
+input::-webkit-inner-spin-button {
+	/*hide arrows in number type*/
 	-webkit-appearance: none;
 	margin: 0;
-  }
+}
 
 /*_____Business_____*/
 
@@ -326,38 +356,25 @@ fieldset h1 {
 }
 
 .sandMani {
-	height: 7vh;
-	width: 100%;
+
+	width: auto;
 	margin-bottom: 5vh;
 	margin-top: 2vh;
 	padding: 2vh;
-	border-radius: 5vh;
-	border-color: #fff;
-	background-color: #f7dbd0;
-	border: none;
-	outline: none;
-	font-size: 3vh;
-	letter-spacing: 0.3vh;
-	cursor: pointer;
-	text-transform: uppercase;
+	
 }
 
-.sandMani:hover {
-	background-size: 50vh;
-	background: linear-gradient(90deg, #f7dbd0, rgb(180, 76, 76), rgb(230, 151, 151), #f7dbd0);
-	background-size: 400%;
-	animation: glow 8s linear infinite;
+#editProfile {
+	margin-left: 35%;
+	width: 30%;
 }
 
-@keyframes glow {
-	0% {
-		background-position: 0%;
-	}
-
-	100% {
-		background-position: 400%;
-	}
+#editProfile a {
+	text-decoration: none;
+	color: black;
 }
+
+
 
 .MenicuristPics img {
 	width: 15vw;
@@ -386,41 +403,31 @@ fieldset h1 {
 
 
 .Searchbutton {
-	cursor: pointer;
 	width: 7vw;
 	height: 10vh;
-	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
-	box-shadow: inset 0 0 0 0 #eed3c9;
-	transition: ease-out 0.5s;
 	font-size: 2vh;
 }
-#search-section{
+
+#search-section {
 	margin-top: 3vh;
 	width: 8vw;
 	height: 6vh;
-	font-size:medium;
-	}
-#servicetype{
+	font-size: medium;
+}
+
+#servicetype {
 	height: 7vh;
 	margin-top: 1vh
-	}
+}
 
-#locate{
-	cursor: pointer;
+#locate {
 	width: 18vw;
 	height: 5vh;
-	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
-	box-shadow: inset 0 0 0 0 #eed3c9;
-	transition: ease-out 0.5s;
 	font-size: 2vh;
 }
 
-#locate:hover {
-	box-shadow: inset 300px 0 0 0 #eed3c9;
-}
-.Searchbutton:hover {
+
+#servicetype:hover {
 	box-shadow: inset 300px 0 0 0 #eed3c9;
 }
 
@@ -431,7 +438,7 @@ fieldset h1 {
 
 }
 
-.titels{
+.titels {
 	margin-left: auto;
 
 }
@@ -441,17 +448,20 @@ fieldset h1 {
 	width: 6vw;
 }
 
-#location-section{
+#location-section {
 	margin-left: -4vh;
 }
-#type-section{
+
+#type-section {
 	margin-top: 3vh;
 }
-#price-section{
+
+#price-section {
 	margin-top: 3vh;
 }
-#pricerange{
-	margin-left:0vh ;
+
+#pricerange {
+	margin-left: 0vh;
 }
 
 
@@ -501,30 +511,14 @@ textarea {
 
 #update {
 
-	height: 14vh;
 	width: 18vw;
 	margin-top: 0.5%;
 	margin-bottom: 2%;
 	margin-left: 33%;
 	padding: 2vh;
-	border-radius: 5vh;
-	border-color: #fff;
-	background-color: #b39082;
-	border: none;
-	outline: none;
-	font-size: 3vh;
-	font-weight: bold;
-	letter-spacing: 0.3vh;
-	cursor: pointer;
-	text-transform: uppercase;
+	
 }
 
-#update:hover {
-	background-size: 50vh;
-	background: linear-gradient(90deg, #f7dbd0, rgb(180, 76, 76), rgb(230, 151, 151), #f7dbd0);
-	background-size: 400%;
-	animation: glow 8s linear infinite;
-}
 
 #uploadPic {
 	grid-area: picsB;

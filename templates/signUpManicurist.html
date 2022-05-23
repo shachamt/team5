@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../static/nailItStyle.css">
     <script defer src="../static/GetLocation.js"></script>
+    <script defer src="../static/general.js"></script>
+
 </head>
 
 <body>
@@ -34,33 +36,33 @@
         <main id="aboutUs">
             <form id="SignUpManicuristForm" class="SignUpForm" action="" method="post">
                 <fieldset>
-    
+
                     <label for="email"> Email: </label>
                     <input type="email" name="email" id="email" class="inputs" required>
                     <p></p>
-    
+
                     <label for="firstName">First Name: </label>
                     <input type="text" id="firstName" name="firstName" required>
                     <p></p>
-    
+
                     <label for="lastName">Last Name: </label>
                     <input type="text" id="lastName" name="lastName" required>
                     <p></p>
-    
+
                     <label for="telephone">Phone Number: </label>
                     <input type="number" name="telephone" id="telephone" required>
                     <p></p>
-    
-                    <button  type="button" id="buttonLocationMani" onclick="GetLocationMani()">Find my location</button>
+
+                    <button type="button" id="buttonLocationMani" onclick="GetLocationMani()">Find my location</button>
 
                     <label id="LatitudeLabel" for="Latitude">Latitude: </label>
                     <input type="text" id="Latitude" name="Latitude" required disabled>
                     <p></p>
-    
+
                     <label for="Longitude">Longitude: </label>
                     <input type="text" id="Longitude" name="Longitude" required disabled>
                     <p></p>
-    
+
                     <label for="password">Password: </label>
                     <input type="password" id="password" name="password" required>
                     <span class="eye" onclick="showPassword()">
@@ -70,12 +72,13 @@
                     <div id="errorMani"></div>
 
                     <p></p>
-    
-                    <button type="submit" id="signUpButton" class="SignButton" >Sign Up</button>
+
+                    <button type="submit" id="signUpButton" class="SignButton">Sign Up</button>
                 </fieldset>
             </form>
-    
-]        </main>
+
+            
+        </main>
 
         <footer class="footer">
 
@@ -83,11 +86,11 @@
             <p>Our phone number: 050-8236578</p>
             <p>Our Email is: nailIt@post.bgu.ac.il</p>
             <ul class="socials">
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-facebook"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-twitter"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-google-plus "></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="to _blank" target="_blanke"> <i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com/" target="_blank"> <i class="fab fa-google-plus "></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube"></i></a></li>
 
             </ul>
 
