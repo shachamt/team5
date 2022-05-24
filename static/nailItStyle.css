@@ -349,6 +349,8 @@ input::-webkit-inner-spin-button {
 
 .MenicuristPics {
 	grid-area: picsB;
+	margin-left: 40%;
+	margin-top: 10vh ;
 	justify-content: center;
 }
 
@@ -386,6 +388,7 @@ fieldset h1 {
 .sandMani {
 
 	width: auto;
+	margin-left: 2vw;
 	margin-bottom: 5vh;
 	margin-top: 2vh;
 	padding: 2vh;
@@ -393,7 +396,7 @@ fieldset h1 {
 }
 
 #editProfile {
-	margin-left: 35%;
+	margin-left: 0;
 	width: 30%;
 }
 
@@ -618,7 +621,7 @@ textarea {
 	width: 18vw;
 	margin-top: 0.5%;
 	margin-bottom: 2%;
-	margin-left: 33%;
+	margin-left: -10%;
 	padding: 2vh;
 
 }
@@ -626,6 +629,8 @@ textarea {
 
 #uploadPic {
 	grid-area: picsB;
+	margin-left: 40%;
+	margin-top: 10vh ;
 	margin-top: 4%;
 
 }
