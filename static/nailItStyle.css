@@ -574,6 +574,17 @@ fieldset h1 {
 
 /* editing business profile */
 
+.gridContainerEditing {
+	display: grid;
+	height: 130vh;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 2fr 2fr 1fr;
+	grid-template-areas:
+		"header  header "
+		"aboutB aboutB "
+		"menuB  pics_e "
+		"footer  footer";
+}
 table {
 	text-align: center;
 	margin-left: 2%;
@@ -628,7 +639,7 @@ textarea {
 
 
 #uploadPic {
-	grid-area: picsB;
+	grid-area: pics_e;
 	margin-left: 40%;
 	margin-top: 10vh ;
 	margin-top: 4%;
