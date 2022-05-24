@@ -57,3 +57,53 @@ formCustomer.addEventListener('submit', (e) => {
     }
 
 })
+
+// // validation for editing profile page
+// function updateMyProfile() {
+//     // alert("Your details were updated");
+//     isValidData();
+
+// }
+function checkeAllServices(){
+    let services = document.getElementsByClassName('service');
+    let prices = document.getElementsByClassName('price');
+    for (let i = 0; i < services.length; i++){
+        if(services[i].value != ''){
+            checkProperPrice(prices[i]);
+        }
+    }
+    for (let i = 0; i < prices.length; i++){
+        if(prices[i].value != ''){
+            checkProperService(services[i]);
+        }
+    }
+}
+function isValidData() {
+    checkeAllServices();
+    const numOfInvalid = document.getElementsByClassName('invalidInput').length;
+    if(numOfInvalid > 0) {
+        alert('Your details have not been updated successfully. Please fix the price list - if you are adding a service you have to add price too and the opposite');
+        document.getElementsByClassName('invalidInput')[0].focus();
+    }
+    else {
+        alert('Your details have been updated successfully ');
+    }
+}
+function checkProperService(ServiceElement){
+    if(ServiceElement.value == ''){
+        ServiceElement.className += " invalidInput";
+    }
+    else {
+        ServiceElement.className = 'service';
+    }
+}
+
+
+function checkProperPrice(priceElement){
+    if(priceElement.value == ''){
+        priceElement.className += " invalidInput";
+    }
+    else {
+        priceElement.className = 'price';
+    }
+}

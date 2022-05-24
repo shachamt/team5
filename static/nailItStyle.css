@@ -614,8 +614,10 @@ table {
 	height: 5vh;
 
 }
-
-
+.invalidInput {
+	background-color: 	rgb(230, 151, 151);
+	
+}
 
 #description {
 	width: 100%;
