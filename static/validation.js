@@ -82,7 +82,7 @@ function isValidData() {
     checkeAllServices();
     const numOfInvalid = document.getElementsByClassName('invalidInput').length;
     if(numOfInvalid > 0) {
-        alert('Your details have not been updated successfully. Please fix the price list - if you are adding a service you have to add price too and the opposite');
+        alert('Your details have not been updated successfully.Please fix the price list - if you are adding a service you have to add price too and the opposite');
         document.getElementsByClassName('invalidInput')[0].focus();
     }
     else {
