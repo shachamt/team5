@@ -325,6 +325,17 @@ input::-webkit-inner-spin-button {
 
 /*_____Business profile_____*/
 
+.gridContainerB {
+	display: grid;
+	height: 130vh;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 2fr 2fr 1fr;
+	grid-template-areas:
+		"header  header "
+		"aboutB aboutB "
+		"menuB  picsB "
+		"footer  footer";
+}
 
 .menuBusiness {
 	grid-area: menuB;
@@ -378,7 +389,7 @@ fieldset h1 {
 	margin-bottom: 5vh;
 	margin-top: 2vh;
 	padding: 2vh;
-
+	
 }
 
 #editProfile {
@@ -415,7 +426,6 @@ fieldset h1 {
 	}
 
 }
-
 /*_____Search_____*/
 
 
