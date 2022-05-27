@@ -64,16 +64,16 @@ formCustomer.addEventListener('submit', (e) => {
 //     isValidData();
 
 // }
-function checkeAllServices(){
+function checkeAllServices() {
     let services = document.getElementsByClassName('service');
     let prices = document.getElementsByClassName('price');
-    for (let i = 0; i < services.length; i++){
-        if(services[i].value != ''){
+    for (let i = 0; i < services.length; i++) {
+        if (services[i].value != '') {
             checkProperPrice(prices[i]);
         }
     }
-    for (let i = 0; i < prices.length; i++){
-        if(prices[i].value != ''){
+    for (let i = 0; i < prices.length; i++) {
+        if (prices[i].value != '') {
             checkProperService(services[i]);
         }
     }
@@ -81,7 +81,7 @@ function checkeAllServices(){
 function isValidData() {
     checkeAllServices();
     const numOfInvalid = document.getElementsByClassName('invalidInput').length;
-    if(numOfInvalid > 0) {
+    if (numOfInvalid > 0) {
         alert('Your details have not been updated successfully.Please fix the price list - if you are adding a service you have to add price too and the opposite');
         document.getElementsByClassName('invalidInput')[0].focus();
     }
@@ -89,8 +89,8 @@ function isValidData() {
         alert('Your details have been updated successfully ');
     }
 }
-function checkProperService(ServiceElement){
-    if(ServiceElement.value == ''){
+function checkProperService(ServiceElement) {
+    if (ServiceElement.value == '') {
         ServiceElement.className += " invalidInput";
     }
     else {
@@ -99,8 +99,8 @@ function checkProperService(ServiceElement){
 }
 
 
-function checkProperPrice(priceElement){
-    if(priceElement.value == ''){
+function checkProperPrice(priceElement) {
+    if (priceElement.value == '') {
         priceElement.className += " invalidInput";
     }
     else {

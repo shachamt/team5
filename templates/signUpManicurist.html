@@ -50,7 +50,8 @@
                     <p></p>
 
                     <label for="telephone">Phone Number: </label>
-                    <input type="number" name="telephone" id="telephone" class="inputs" required>
+                    <input type="number" name="telephone" id="telephone" class="inputs" required min="0"
+                        oninput="validity.valid||(value='');">
                     <p></p>
 
 

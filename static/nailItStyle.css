@@ -490,6 +490,10 @@ fieldset h1 {
 	padding: 2%;
 	margin-bottom: 5%;
 }
+#search-section a {
+	text-decoration: none;
+	color:black
+}
 
 #servicetype {
 	height: 7vh;
@@ -605,17 +609,7 @@ fieldset h1 {
 
 /* editing business profile */
 
-.gridContainerEditing {
-	display: grid;
-	height: 130vh;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.5fr 2fr 2fr 1fr;
-	grid-template-areas:
-		"header  header "
-		"aboutB aboutB "
-		"menuB  pics_e "
-		"footer  footer";
-}
+
 table {
 	text-align: center;
 	margin-left: 2%;
@@ -672,7 +666,7 @@ textarea {
 
 
 #uploadPic {
-	grid-area: pics_e;
+	grid-area: picsB;
 	margin-left: 40%;
 	margin-top: 10vh ;
 	margin-top: 4%;
@@ -691,7 +685,15 @@ textarea {
 
 /*_____sign pages, search, home - media_____*/
 @media only screen and (max-width: 760px) {
+	#update {
 
+		width: 24vw;
+		margin-top: 0.5%;
+		margin-bottom: 2%;
+		margin-left: 0;
+		padding: 2vh;
+	
+	}
 
 	.PageImage {
 		grid-area: img;
